@@ -1,0 +1,23 @@
+@model List<VeterinariaApp.Models.Mascota>
+
+<h2>Lista de Mascotas</h2>
+
+<a asp-action="Create">Registrar nueva mascota</a>
+
+<table class="table">
+    <tr>
+        <th>Nombre</th>
+        <th>Especie</th>
+        <th>Raza</th>
+        <th>Edad</th>
+    </tr>
+    @foreach (var mascota in Model)
+    {
+        <tr>
+            <td>@mascota.Nombre</td>
+            <td>@mascota.Especie</td>
+            <td>@mascota.Raza</td>
+            <td>@mascota.Edad</td>
+        </tr>
+    }
+</table>
