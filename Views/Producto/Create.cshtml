@@ -1,0 +1,16 @@
+@model VeterinariaApp.Models.Producto
+
+<h2>Registrar Producto</h2>
+
+<form asp-action="Create" method="post">
+    <label>Nombre:</label>
+    <input asp-for="Nombre" class="form-control" />
+
+    <label>Precio:</label>
+    <input asp-for="Precio" class="form-control" />
+
+    <label>Stock:</label>
+    <input asp-for="Stock" class="form-control" />
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
